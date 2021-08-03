@@ -1,0 +1,123 @@
+2021-08-03 16:36:40 [-][-][-][error][yii\db\Exception] PDOException: could not find driver in D:\3\vendor\yiisoft\yii2\db\Connection.php:719
+Stack trace:
+#0 D:\3\vendor\yiisoft\yii2\db\Connection.php(719): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 D:\3\vendor\yiisoft\yii2\db\Connection.php(638): yii\db\Connection->createPdoInstance()
+#2 D:\3\vendor\yiisoft\yii2\db\Connection.php(1059): yii\db\Connection->open()
+#3 D:\3\vendor\yiisoft\yii2\db\Connection.php(1046): yii\db\Connection->getMasterPdo()
+#4 D:\3\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo()
+#5 D:\3\vendor\yiisoft\yii2\db\Command.php(1163): yii\db\Command->prepare(true)
+#6 D:\3\vendor\yiisoft\yii2\db\Command.php(410): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 D:\3\vendor\yiisoft\yii2\db\mysql\Schema.php(319): yii\db\Command->queryAll()
+#8 D:\3\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 D:\3\vendor\yiisoft\yii2\db\Schema.php(758): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 D:\3\vendor\yiisoft\yii2\db\Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#11 D:\3\vendor\yiisoft\yii2\console\controllers\MigrateController.php(371): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#12 D:\3\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(645): yii\console\controllers\MigrateController->getMigrationNameLimit()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionCreate('create_link_tab...')
+#14 D:\3\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 D:\3\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#16 D:\3\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction('create', Array)
+#17 D:\3\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction('create', Array)
+#18 D:\3\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction('migrate/create', Array)
+#19 D:\3\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('migrate/create', Array)
+#20 D:\3\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 D:\3\yii(20): yii\base\Application->run()
+#22 {main}
+
+Next yii\db\Exception: could not find driver in D:\3\vendor\yiisoft\yii2\db\Connection.php:649
+Stack trace:
+#0 D:\3\vendor\yiisoft\yii2\db\Connection.php(1059): yii\db\Connection->open()
+#1 D:\3\vendor\yiisoft\yii2\db\Connection.php(1046): yii\db\Connection->getMasterPdo()
+#2 D:\3\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo()
+#3 D:\3\vendor\yiisoft\yii2\db\Command.php(1163): yii\db\Command->prepare(true)
+#4 D:\3\vendor\yiisoft\yii2\db\Command.php(410): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 D:\3\vendor\yiisoft\yii2\db\mysql\Schema.php(319): yii\db\Command->queryAll()
+#6 D:\3\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 D:\3\vendor\yiisoft\yii2\db\Schema.php(758): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 D:\3\vendor\yiisoft\yii2\db\Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#9 D:\3\vendor\yiisoft\yii2\console\controllers\MigrateController.php(371): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#10 D:\3\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(645): yii\console\controllers\MigrateController->getMigrationNameLimit()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionCreate('create_link_tab...')
+#12 D:\3\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#13 D:\3\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#14 D:\3\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction('create', Array)
+#15 D:\3\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction('create', Array)
+#16 D:\3\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction('migrate/create', Array)
+#17 D:\3\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('migrate/create', Array)
+#18 D:\3\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 D:\3\yii(20): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2021-08-03 16:36:40 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ADSK_3DSMAX_x64_2019' => 'C:\\Program Files\\Autodesk\\3ds Max 2019\\'
+    'ADSK_3DSMAX_x64_2020' => 'C:\\Program Files\\Autodesk\\3ds Max 2020\\'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Driver86\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'MYDESKTOP'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'GDAL_DATA' => 'C:\\Program Files (x86)\\VTP\\GDAL-data'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Driver86'
+    'LOCALAPPDATA' => 'C:\\Users\\Driver86\\AppData\\Local'
+    'LOGONSERVER' => '\\\\MYDESKTOP'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\Driver86\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\Driver86\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Common Files\\Autodesk Shared\\;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;D:\\Program Files\\php;C:\\ProgramData\\ComposerSetup\\bin;D:\\Program Files\\gradle\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\Driver86\\AppData\\Local\\Programs\\Python\\Python38\\Scripts\\;C:\\Users\\Driver86\\AppData\\Local\\Programs\\Python\\Python38\\;C:\\Users\\Driver86\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\heroku\\bin;C:\\Users\\Driver86\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Driver86\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 94 Stepping 3, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '5e03'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROJ_LIB' => 'C:\\Program Files (x86)\\VTP\\PROJ4-data'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Users\\Driver86\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files\\Intel\\Wired Networking\\;C:\\Program Files\\Intel\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\Driver86\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Driver86\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'MYDESKTOP'
+    'USERDOMAIN_ROAMINGPROFILE' => 'MYDESKTOP'
+    'USERNAME' => 'Driver86'
+    'USERPROFILE' => 'C:\\Users\\Driver86'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\WINDOWS'
+    'WSLENV' => 'WT_SESSION::WT_PROFILE_ID'
+    'WT_PROFILE_ID' => '{61c54bbd-c2c6-5271-96e7-009a87ff44bf}'
+    'WT_SESSION' => 'f435fa80-5ce7-4246-b244-5c7f7010d74e'
+    'YII_PATH' => 'D:\\3\\'
+    'ZES_ENABLE_SYSMAN' => '1'
+    'PHP_SELF' => 'D:\\3\\yii'
+    'SCRIPT_NAME' => 'D:\\3\\yii'
+    'SCRIPT_FILENAME' => 'D:\\3\\yii'
+    'PATH_TRANSLATED' => 'D:\\3\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1628008600.5051
+    'REQUEST_TIME' => 1628008600
+    'argv' => [
+        0 => 'D:\\3\\yii'
+        1 => 'migrate/create'
+        2 => 'create_link_table'
+    ]
+    'argc' => 3
+]
